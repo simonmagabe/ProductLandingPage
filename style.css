@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Mulish', sans-serif;
+    color: white;
   }
   
   #content {
@@ -44,7 +45,7 @@ body {
     padding: 0.2rem;
   }
 
-  #header-logo picture #logo-img {
+  #header-logo picture #header-img {
     height: 3vw;
   }
   
@@ -54,7 +55,14 @@ body {
     flex-flow: row wrap;
     border: 3px solid green;
     list-style: none;
-    
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li a {
+    text-decoration: none;
   }
   
   #nav-items li {
@@ -85,8 +93,6 @@ body {
     border: 2px solid magenta;
     align-items: center;
     display: flex;
-    flex-flow: wrap;
-    flex: 1;
     width: 50vw;
     justify-content: center;
     color: #fff;
@@ -157,9 +163,10 @@ body {
     background-color: azure;
   }
 
-  #features #product #product-image #brass-trombone {
+  #features #product #product-image #trombone-img {
     display: flex;
-    width: 10vw;
+    width: 15vw;
+    height: 15vh;
     margin: 0.2rem;
     padding: 0.4rem;
   }
@@ -189,10 +196,93 @@ body {
     width: 420px;
     height: 250px;
   }
+
+  #product-pricing {
+    border: 2px solid rgb(255, 255, 255);
+    width: 50vw;
+    flex-wrap: wrap;
+  }
+
+  #pricing-title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #pricing {
+    border: 2px solid orange;
+    display: flex;
+    padding: 2rem 8rem;
+    height: 25vh;
+  }
+
+  #pricing section {
+    border: 0.1rem solid wheat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    border-radius: 0.2rem;
+  }
+
+  #brass-trombone-pricing {
+    display: flex;
+    flex: 1;
+  }
+
+  #gold-trombone-pricing {
+    display: flex;
+    flex: 1;
+    margin: -1rem 0rem;
+    padding: 1rem 0rem;
+  }
+
+  #silver-trombone-pricing {
+    display: flex;
+    flex: 1;
+  }
+
+  #pricing section #trombone-name {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    margin: 0;
+    padding: 0.2rem;
+  }
+
+  #pricing section #trombone-price {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0.2rem;
+  }
+
+  #pricing section #trombone-color {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: x-small;
+    border-top: white 0.1rem solid;
+    border-bottom: whitesmoke 0.1rem solid;
+    margin: 0;
+    padding: 0.4rem;
+  }
+
+  #pricing section button {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    border: 0.1rem solid green;
+    margin: 0;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+  }
   
   #footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   #footer-right-section #agreement {
@@ -201,7 +291,6 @@ body {
   
   #footer-right-section #agreement li {
     flex: 1;
-    list-style: none;
   }
   
   /* Media Query */

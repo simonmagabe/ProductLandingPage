@@ -16,7 +16,7 @@
         <nav id="nav-bar">
           <aside id="header-logo">
             <picture>
-                <img src="./assets/product_images/trombone-logo.png" id="logo-img" alt="logo" />
+                <img src="./assets/product_images/trombone-logo.png" id="header-img" alt="logo" />
             </picture>
             <h2 id="brand-name">Acme Music Inc</h2>
           </aside>
@@ -45,7 +45,7 @@
             <section id="features">
               <section id="product">
                 <section id="product-image">
-                  <img id="brass-trombone" src="./assets/product_images/brass-trombone.png" alt="brass trambone" />
+                  <img id="trombone-img" src="./assets/product_images/brass-trombone.png" alt="brass trambone" />
                 </section>
                 <section id="product-description">
                   <h2 id="product-name">
@@ -59,7 +59,7 @@
   
               <section id="product">
                 <section id="product-image">
-                    <img id="brass-trombone" src="./assets/product_images/gold-trombone.jpg" alt="gold trambone" />
+                    <img id="trombone-img" src="./assets/product_images/gold-trombone.jpg" alt="gold trambone" />
                 </section>
                 <section id="product-description">
                   <h2 id="product-name">
@@ -73,7 +73,7 @@
   
               <section id="product">
                 <section id="product-image">
-                    <img id="brass-trombone" src="./assets/product_images/silver-trombone.png" alt="silver trambone" />
+                    <img id="trombone-img" src="./assets/product_images/silver-trombone.png" alt="silver trambone" />
                 </section>
                 <section id="product-description">
                     <h2 id="product-name">
@@ -95,15 +95,29 @@
             </section>
           </article>
   
-          <article class="mini-article">
+          <article id="product-pricing">
+            <section id="pricing-title">
+                <h2>Our Pricing</h2>
+            </section>
             <section id="pricing">
-              <h2>Pricing for Product One</h2>
-            </section>
-            <section>
-              <h2>Pricing for Product Two</h2>
-            </section>
-            <section>
-              <h2>Pricing for Product Three</h2>
+                <section id="brass-trombone-pricing">
+                    <p id="trombone-name">Brass Trombone</p>
+                    <p id="trombone-price">$199.99</p>
+                    <p id="trombone-color">Color: Brass</p>
+                    <button>Learn More</button>
+                </section>
+                <section id="gold-trombone-pricing">
+                    <p id="trombone-name">Gold Trombone</p>
+                    <p id="trombone-price">$249.99</p>
+                    <p id="trombone-color">Color: Gold</p>
+                    <button>Learn More</button>
+                </section>
+                <section id="silver-trombone-pricing">
+                    <p id="trombone-name">Silver Trombone</p>
+                    <p id="trombone-price">$399.99</p>
+                    <p id="trombone-color">Color: Silver</p>
+                    <button>Learn More</button>
+                </section>
             </section>
           </article>
         </main>
@@ -116,7 +130,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
             <ul id="copyright">
-              <li><a href="#">Copyright 2021, Magabe Acme</a></li>
+              <li><a href="#">&copy; Acme Music Inc <span id="year"></span>. All rights reserved</a></li>
             </ul>
           </section>
         </footer>
@@ -124,5 +138,6 @@
       </article>
     </article>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
