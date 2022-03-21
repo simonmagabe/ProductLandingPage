@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <article class="container">
       <header id="header">
         <nav id="nav-bar">
-          <aside id="logo">
-            <img src="" id="header-img" alt="logo" />
-            <h2>Magabe Acme</h2>
+          <aside id="header-logo">
+            <picture>
+                <img src="./assets/product_images/trombone-logo.png" id="logo-img" alt="logo" />
+            </picture>
+            <h2 id="brand-name">Acme Music Inc</h2>
           </aside>
           <ul id="nav-items">
             <li><a class="nav-link" href="#features">Features</a></li>
@@ -28,7 +34,7 @@
             <section id="subscription">
               <h2 id="title">Handcrafted, home-made masterpieces</h2>
               <form id="form" method="GET" action="mailto:https://www.freecodecamp.com/email-submit" enctype="text/plain">
-                <input id="email" type="email" name="email" placeholder="Enter email address" />
+                <input id="email" type="email" name="email" placeholder="Enter email address to subsribe..." />
                 <br>
                 <input id="submit" type="submit" value="GET STARTED" />
               </form>
@@ -38,38 +44,42 @@
           <article class="mini-article">
             <section id="features">
               <section id="product">
-                <section id="icon">
-                  <i class="fa fa-cloud" style="font-size:24px;"></i>
+                <section id="product-image">
+                  <img id="brass-trombone" src="./assets/product_images/brass-trombone.png" alt="brass trambone" />
                 </section>
                 <section id="product-description">
-                  <h2>First Product</h2>
-                  <p>
+                  <h2 id="product-name">
+                    Brass Trombone
+                  </h2>
+                  <p id="description">
                     Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
                   </p>
                 </section>
               </section>
   
               <section id="product">
-                <section id="icon">
-                  <i class="fa fa-cloud" style="font-size:24px;"></i>
+                <section id="product-image">
+                    <img id="brass-trombone" src="./assets/product_images/gold-trombone.jpg" alt="gold trambone" />
                 </section>
                 <section id="product-description">
-                  <h2>
-                    Product 2
+                  <h2 id="product-name">
+                    Gold Trombone
                   </h2>
-                  <p>
+                  <p id="description">
                     Our trombones use the shiniest brass which is sourced locally.
                   </p>
                 </section>
               </section>
   
               <section id="product">
-                <section id="icon">
-                  <i class="fa fa-cloud" style="font-size:24px;"></i>
+                <section id="product-image">
+                    <img id="brass-trombone" src="./assets/product_images/silver-trombone.png" alt="silver trambone" />
                 </section>
                 <section id="product-description">
-                  <h2>Third Product</h2>
-                  <p>
+                    <h2 id="product-name">
+                      Silver Trombone
+                    </h2>
+                  <p id="description">
                     Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
                   </p>
                 </section>

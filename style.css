@@ -1,11 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    position: ;
-  }
-  
-  .container {
-    max-width: 100vw;
+    font-family: 'Mulish', sans-serif;
   }
   
   #content {
@@ -13,13 +9,15 @@ body {
   }
   
   #header {
-    max-width: 100vw;
     border: 4px solid teal;
     display: flex;
     flex-wrap: wrap;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     margin-top: 0;
+    flex: 1;
   }
   
   #nav-bar {
@@ -30,33 +28,40 @@ body {
     flex-wrap: wrap;
   }
   
-  #logo {
+  #header-logo {
     flex: 1;
     border: 3px solid green;
     display: flex;
-    align-items: center;
-    flex-warp: wrap;
+    justify-content: right;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 0.2rem;
   }
-  
-  #logo img,
-  #logo h2 {
+
+  #header-logo picture {
+    border: 3px solid red;
+    margin: 0.2rem;
+    padding: 0.2rem;
+  }
+
+  #header-logo picture #logo-img {
+    height: 3vw;
   }
   
   #nav-items {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-flow: row wrap;
     border: 3px solid green;
-    align-items: center;
     list-style: none;
-    justify-content: center;
+    
   }
   
   #nav-items li {
     border: 3px solid red;
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    justify-content: left;
   }
   
   .nav-link {
@@ -64,7 +69,7 @@ body {
     text-decoration: none;
     list-style: none;
     padding: 0.1rem;
-    dispaly: flex;
+    display: flex;
   }
   
   .main {
@@ -73,6 +78,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     flex: 1;
+    background-color: #1d1d2d;
   }
   
   .mini-article {
@@ -83,6 +89,8 @@ body {
     flex: 1;
     width: 50vw;
     justify-content: center;
+    color: #fff;
+    background-color: #2d2d2d;
   }
   
   .mini-article #subscription {
@@ -93,11 +101,11 @@ body {
   }
   
   .mini-article #subscription #title {
-    flex: 1;
+    flex: 2;
     border: 2px solid teal;
-    width: 50%;
     text-align: center;
     flex-wrap: wrap;
+    padding: 0.4rem;
   }
   
   .mini-article #subscription#form {
@@ -108,20 +116,22 @@ body {
     flex-flow: column wrap;
     align-items: center;
   }
+
+  #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
   
+  #form input {
+      padding: 3%;
+  }
+
   #form #email {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 75%;
+      width: 20vw;
   }
   
-  #form #submit {
-    display: flex;
-    padding: 10px;
-  }
-  
-  .mini-article section#features {
+  .mini-article section #features {
     border: 2px solid yellow;
     display: flex;
     flex-flow: column wrap;
@@ -133,23 +143,39 @@ body {
     display: flex;
     flex: 1;
     align-items: center;
-    padding: 0;
+    margin: 0.2rem;
+    padding: 0.2rem;
   }
   
-  #features #product #icon {
-    border: 2px solid red;
-    flex: 1;
+  #features #product #product-image {
+    display: flex;
+    flex: 2;
+    border: 3px solid teal;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    width: 10vw;
+    background-color: azure;
+  }
+
+  #features #product #product-image #brass-trombone {
+    display: flex;
+    width: 10vw;
+    margin: 0.2rem;
+    padding: 0.4rem;
   }
   
   #product-description {
     border: 2px solid red;
     flex: 4;
+    margin: 0.2rem;
+    padding: 0.2rem;
   }
   
-  #product-description h2,
-  #product-description p {
+  #product-description #product-name,
+  #product-description #description {
     border: 1px solid;
-    margin: 0;
+    margin: 0.2rem;
+    padding: 0.2rem;
   }
   
   #media {
