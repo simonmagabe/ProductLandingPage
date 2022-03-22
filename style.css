@@ -1,16 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: 'Mulish', sans-serif;
     color: white;
-  }
+}
   
-  #content {
-    margin-top: 90px;
-  }
+#content {
+    margin-top: 78px;
+}
   
-  #header {
-    border: 4px solid teal;
+#header {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
@@ -19,205 +21,210 @@ body {
     left: 0;
     margin-top: 0;
     flex: 1;
-  }
+    background-color: #1f1f2e;
+    border-bottom: 0.01rem solid wheat;
+    transition: top 1s;
+}
   
-  #nav-bar {
+#nav-bar {
     width: 100vw;
-    border: 4px solid blue;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-  }
+}
+
+#nav-bar a:hover {
+    border-bottom: #fff 0.1rem solid;
+}
   
-  #header-logo {
+#header-logo {
     flex: 1;
-    border: 3px solid green;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
     flex: 1;
     padding: 0.2rem;
-  }
+}
 
-  #header-logo picture {
-    border: 3px solid red;
+#header-logo picture {
     margin: 0.2rem;
     padding: 0.2rem;
-  }
+}
 
-  #header-logo picture #header-img {
+#header-logo picture #header-img {
     height: 3vw;
-  }
+}
   
-  #nav-items {
+#nav-items {
     flex: 2;
     display: flex;
     flex-flow: row wrap;
-    border: 3px solid green;
     list-style: none;
-  }
+}
 
-  li {
+li {
     list-style: none;
-  }
+}
 
-  li a {
+li a {
     text-decoration: none;
-  }
+    color: white;
+}
   
-  #nav-items li {
-    border: 3px solid red;
+#nav-items li {
     display: flex;
     flex: 1;
-    justify-content: left;
-  }
+    justify-content: center;
+}
   
-  .nav-link {
-    border: 4px solid black;
+.nav-link {
     text-decoration: none;
     list-style: none;
     padding: 0.1rem;
     display: flex;
-  }
+    margin-top: 1rem;
+}
   
-  .main {
-    border: 3px solid orange;
+.main {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     flex: 1;
     background-color: #1d1d2d;
-  }
+}
   
-  .mini-article {
-    border: 2px solid magenta;
+.mini-article {
+    border-left: 0.1rem solid wheat;
+    border-right: 0.1rem solid wheat;
     align-items: center;
     display: flex;
     width: 50vw;
     justify-content: center;
     color: #fff;
     background-color: #2d2d2d;
-  }
+}
   
-  .mini-article #subscription {
+.mini-article #subscription {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     flex: 1;
-  }
+}
   
-  .mini-article #subscription #title {
+.mini-article #subscription #title {
     flex: 2;
-    border: 2px solid teal;
+    border: 0.1rem solid teal;
     text-align: center;
     flex-wrap: wrap;
-    padding: 0.4rem;
-  }
+    padding: 0.5rem;
+    margin: 2rem;
+}
   
-  .mini-article #subscription#form {
+.mini-article #subscription #form {
     flex: 1;
-    border: 2px solid teal;
+    border: 0.1rem solid teal;
     width: 50%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-  }
+    padding: 1rem;
+}
 
-  #form {
+#form {
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
+}
   
-  #form input {
-      padding: 3%;
-  }
+#form input {
+    padding: 3%;
+}
 
-  #form #email {
-      width: 20vw;
-  }
+#form #email {
+    width: 20vw;
+}
   
-  .mini-article section #features {
-    border: 2px solid yellow;
+.mini-article section #features {
+    border: 0.1rem solid yellow;
     display: flex;
     flex-flow: column wrap;
     flex: 1;
-  }
+}
   
-  .mini-article #features #product {
-    border: 3px solid green;
+.mini-article #features #product {
+    border: 0.1rem solid wheat;
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0.2rem;
+    margin: 2rem;
     padding: 0.2rem;
-  }
+    border-radius: 0.2rem;
+}
   
-  #features #product #product-image {
+#features #product #product-image {
     display: flex;
     flex: 2;
-    border: 3px solid teal;
+    flex-wrap: wrap;
+    border: 0.1rem solid teal;
     margin: 0.2rem;
     padding: 0.2rem;
-    width: 10vw;
     background-color: azure;
-  }
+    border-radius: 0.2rem;
+}
 
-  #features #product #product-image #trombone-img {
+#features #product #product-image #trombone-img {
     display: flex;
+    flex-wrap: wrap;
     width: 15vw;
     height: 15vh;
     margin: 0.2rem;
     padding: 0.4rem;
-  }
+}
   
-  #product-description {
-    border: 2px solid red;
+#product-description {
     flex: 4;
     margin: 0.2rem;
     padding: 0.2rem;
-  }
+}
   
-  #product-description #product-name,
-  #product-description #description {
-    border: 1px solid;
+#product-description #product-name,
+#product-description #description {
     margin: 0.2rem;
     padding: 0.2rem;
-  }
+}
   
-  #media {
-    border: 3px solid;
+#media {
     display: flex;
     padding: 4em;
-  }
+}
   
-  #video {
+#video {
     border: none;
     width: 420px;
     height: 250px;
-  }
+}
 
-  #product-pricing {
-    border: 2px solid rgb(255, 255, 255);
+#product-pricing {
+    border-left: 0.1rem solid wheat;
+    border-right: 0.1rem solid wheat;
     width: 50vw;
     flex-wrap: wrap;
-  }
+}
 
-  #pricing-title {
+#pricing-title {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
-  #pricing {
-    border: 2px solid orange;
+#pricing {
     display: flex;
     padding: 2rem 8rem;
     height: 25vh;
-  }
+}
 
-  #pricing section {
-    border: 0.1rem solid wheat;
+#pricing section {
+    border: 0.1rem solid aliceblue;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -225,42 +232,46 @@ body {
     justify-content: space-evenly;
     width: 50%;
     border-radius: 0.2rem;
-  }
+}
 
-  #brass-trombone-pricing {
+#pricing-title h2 {
+    padding: 1rem;
+}
+
+#brass-trombone-pricing {
     display: flex;
     flex: 1;
-  }
+}
 
-  #gold-trombone-pricing {
+#gold-trombone-pricing {
     display: flex;
     flex: 1;
     margin: -1rem 0rem;
     padding: 1rem 0rem;
-  }
+}
 
-  #silver-trombone-pricing {
+#silver-trombone-pricing {
     display: flex;
     flex: 1;
-  }
+}
 
-  #pricing section #trombone-name {
+#pricing section #trombone-name {
     display: flex;
     flex-wrap: wrap;
     font-size: small;
     margin: 0;
     padding: 0.2rem;
-  }
+}
 
-  #pricing section #trombone-price {
+#pricing section #trombone-price {
     display: flex;
     flex-wrap: wrap;
     font-size: xx-large;
     margin: 0;
     padding: 0.2rem;
-  }
+}
 
-  #pricing section #trombone-color {
+#pricing section #trombone-color {
     display: flex;
     flex-wrap: wrap;
     font-size: x-small;
@@ -268,33 +279,41 @@ body {
     border-bottom: whitesmoke 0.1rem solid;
     margin: 0;
     padding: 0.4rem;
-  }
+}
 
-  #pricing section button {
+#pricing section button {
     display: flex;
     flex-wrap: wrap;
     font-size: small;
-    border: 0.1rem solid green;
+    border: 0.1rem solid magenta;
     margin: 0;
     padding: 0.6rem;
     border-radius: 0.2rem;
-  }
+    cursor: -webkit-grab; cursor: pointer;
+}
   
-  #footer {
+#footer {
     display: flex;
     justify-content: center;
-  }
+    background-color: #1d1d2d;
+    color: white;
+    border-top: 0.1rem white solid;
+}
   
-  #footer-right-section #agreement {
+#footer-right-section #agreement {
     display: flex;
-  }
+}
   
-  #footer-right-section #agreement li {
+#footer-right-section #agreement li {
     flex: 1;
-  }
+}
+
+#footer li a, #footer li {
+    cursor: pointer;
+}
   
   /* Media Query */
   
-  @media all and (max-width: 500px) {
-  }
+@media all and (max-width: 500px) {
+}
   
