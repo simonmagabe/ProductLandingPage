@@ -1,6 +1,8 @@
 html {
     scroll-behavior: smooth;
+    background-color: #1f1f2e;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -23,7 +25,7 @@ body {
     flex: 1;
     background-color: #1f1f2e;
     border-bottom: 0.01rem solid wheat;
-    transition: top 1s;
+    transition: top 0.3s;
 }
   
 #nav-bar {
@@ -91,6 +93,11 @@ li a {
     flex: 1;
     background-color: #1d1d2d;
 }
+
+#horizontal-rule {
+    width: 45vw;
+    margin-top: 2rem;
+}
   
 .mini-article {
     border-left: 0.1rem solid wheat;
@@ -108,6 +115,7 @@ li a {
     flex-flow: column wrap;
     align-items: center;
     flex: 1;
+    margin: 1rem;
 }
   
 .mini-article #subscription #title {
@@ -127,6 +135,7 @@ li a {
     flex-flow: column wrap;
     align-items: center;
     padding: 1rem;
+    margin: 2rem;
 }
 
 #form {
@@ -141,6 +150,10 @@ li a {
 
 #form #email {
     width: 20vw;
+}
+
+#form #submit {
+    cursor: pointer;
 }
   
 .mini-article section #features {
@@ -159,6 +172,11 @@ li a {
     margin: 2rem;
     padding: 0.2rem;
     border-radius: 0.2rem;
+}
+
+#features-title {
+    display: flex;
+    justify-content: center;
 }
   
 #features #product #product-image {
@@ -290,6 +308,17 @@ li a {
     padding: 0.6rem;
     border-radius: 0.2rem;
     cursor: -webkit-grab; cursor: pointer;
+    text-transform: uppercase;
+    transition: width 20s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#pricing section button:hover {
+    width: 7vw;
+    height: 5vh;
+    background-color: aqua;
 }
   
 #footer {

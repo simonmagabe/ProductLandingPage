@@ -8,7 +8,7 @@ window.onscroll = () => {
     if (prevScrollPosition > currentScrollPosition) {
         document.getElementById("header").style.top = "0";
     } else {
-        document.getElementById("header").style.top = "-90px";
+        document.getElementById("header").style.top = "-98px";
     }
     prevScrollPosition = currentScrollPosition;
 }
