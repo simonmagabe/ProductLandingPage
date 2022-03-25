@@ -156,8 +156,7 @@ li a {
     cursor: pointer;
 }
   
-.mini-article section #features {
-    border: 0.1rem solid yellow;
+.mini-article #features {
     display: flex;
     flex-flow: column wrap;
     flex: 1;
@@ -166,11 +165,9 @@ li a {
 .mini-article #features #product {
     border: 0.1rem solid wheat;
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row wrap;
     margin: 2rem;
-    padding: 0.2rem;
+    padding: 0.8rem;
     border-radius: 0.2rem;
 }
 
@@ -181,28 +178,32 @@ li a {
   
 #features #product #product-image {
     display: flex;
-    flex: 2;
+    flex: 1;
     flex-wrap: wrap;
     border: 0.1rem solid teal;
     margin: 0.2rem;
     padding: 0.2rem;
     background-color: azure;
     border-radius: 0.2rem;
+    justify-content: center;
 }
 
 #features #product #product-image #trombone-img {
     display: flex;
     flex-wrap: wrap;
-    width: 15vw;
-    height: 15vh;
+    max-width: 100%;
+    height: auto;
     margin: 0.2rem;
-    padding: 0.4rem;
 }
   
 #product-description {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
     flex: 4;
     margin: 0.2rem;
     padding: 0.2rem;
+    border: 0.15rem rgb(5, 5, 5) solid;
 }
   
 #product-description #product-name,
@@ -214,111 +215,41 @@ li a {
 #media {
     display: flex;
     padding: 4em;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
 }
   
 #video {
     border: none;
-    width: 420px;
-    height: 250px;
-}
-
-#product-pricing {
-    border-left: 0.1rem solid wheat;
-    border-right: 0.1rem solid wheat;
-    width: 50vw;
-    flex-wrap: wrap;
-}
-
-#pricing-title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 45vw;
 }
 
 #pricing {
-    display: flex;
-    padding: 2rem 8rem;
-    height: 25vh;
+    border: green solid 1px;
+    flex-flow: column wrap;
 }
 
-#pricing section {
-    border: 0.1rem solid aliceblue;
+#pricing-title {
+    border: teal solid 1px;
+}
+
+#pricing-banner {
+    border: red solid 1px;
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
-    border-radius: 0.2rem;
-}
-
-#pricing-title h2 {
-    padding: 1rem;
-}
-
-#brass-trombone-pricing {
-    display: flex;
-    flex: 1;
-}
-
-#gold-trombone-pricing {
-    display: flex;
-    flex: 1;
-    margin: -1rem 0rem;
-    padding: 1rem 0rem;
-}
-
-#silver-trombone-pricing {
-    display: flex;
-    flex: 1;
-}
-
-#pricing section #trombone-name {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: small;
-    margin: 0;
-    padding: 0.2rem;
-}
-
-#pricing section #trombone-price {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: xx-large;
-    margin: 0;
-    padding: 0.2rem;
-}
-
-#pricing section #trombone-color {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: x-small;
-    border-top: white 0.1rem solid;
-    border-bottom: whitesmoke 0.1rem solid;
-    margin: 0;
-    padding: 0.4rem;
-}
-
-#pricing section button {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: small;
-    border: 0.1rem solid magenta;
-    margin: 0;
-    padding: 0.6rem;
-    border-radius: 0.2rem;
-    cursor: -webkit-grab; cursor: pointer;
-    text-transform: uppercase;
-    transition: width 20s;
-    text-align: center;
     justify-content: center;
-    align-items: center;
 }
 
-#pricing section button:hover {
-    width: 7vw;
-    height: 5vh;
-    background-color: aqua;
+#pricing-card {
+    border: yellow solid 1px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width: 30%;
+    height: auto;
 }
   
 #footer {
@@ -340,9 +271,3 @@ li a {
 #footer li a, #footer li {
     cursor: pointer;
 }
-  
-  /* Media Query */
-  
-@media all and (max-width: 500px) {
-}
-  
