@@ -1,0 +1,64 @@
+/* Media Query */
+/* Nest Hub Max */
+@media all and (max-width: 1280px) {
+    .mini-article {
+        width: 70vw;
+    }
+}
+
+/* Nest Hub */
+@media all and (max-width: 1024px) {
+    .mini-article {
+        width: 80vw;
+    }
+}
+
+/* Surface Pro 7 */
+@media all and (max-width: 912px) {
+    .mini-article {
+        width: 90vw;
+    }
+}
+
+/* Ipad Air */
+@media all and (max-width: 820px) {
+    .mini-article {
+        width: 90vw;
+    }
+}
+
+/* Ipad Mini */
+@media all and (max-width: 768px) {
+    .mini-article {
+        width: 90vw;
+    }
+}
+
+/* Surface Duo */
+@media all and (max-width: 540px) {
+    .mini-article {
+        width: 90vw;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media all and (max-width: 412px) {
+    .mini-article {
+        width: 90vw;
+    }
+}
+
+/* Iphone 12 Pro */
+@media all and (max-width: 390px) {
+    .mini-article {
+        width: 90vw;
+    }
+
+    #pricing-banner {
+        flex-flow: column wrap;
+    }
+
+    #pricing-card  {
+        width: 75%;
+    }
+}
